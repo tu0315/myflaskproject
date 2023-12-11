@@ -1,7 +1,6 @@
-https://www.youtube.com/watch?v=VtJ-fGm4gNg&t=196s
-
-https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/quickstart.html
-https://jinja.palletsprojects.com/en/3.1.x/templates/
+【完全版】この動画1本でFlaskの基礎を習得！忙しい人のための速習コース（Flask超入門） - YouTube https://www.youtube.com/watch?v=VtJ-fGm4gNg&t=196s
+クイックスタート — Flask Documentation (2.2.x) https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/quickstart.html
+Template Designer Documentation — Jinja Documentation (3.1.x) https://jinja.palletsprojects.com/en/3.1.x/templates/
 
 DB・テーブル反映
 $ python3
