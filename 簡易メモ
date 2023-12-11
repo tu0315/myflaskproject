@@ -1,5 +1,4 @@
 https://www.youtube.com/watch?v=VtJ-fGm4gNg&t=196s
-Q,ディレクトリの状態これでいいのかな？
 
 https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/quickstart.html
 https://jinja.palletsprojects.com/en/3.1.x/templates/
@@ -15,3 +14,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ...     db.create_all()
 ... 
 >>> exit()
+
+2023/12/11
+8h
+sha256エラーで詰んだ
