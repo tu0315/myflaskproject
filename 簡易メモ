@@ -4,6 +4,7 @@ Q,ディレクトリの状態これでいいのかな？
 https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/quickstart.html
 https://jinja.palletsprojects.com/en/3.1.x/templates/
 
+DB・テーブル反映
 $ python3
 Python 3.9.12 (main, Apr  5 2022, 01:53:17) 
 [Clang 12.0.0 ] :: Anaconda, Inc. on darwin
