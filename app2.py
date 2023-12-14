@@ -14,7 +14,7 @@ import pytz
 # SQLAlchemyの設定
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///blog.db"
-app.config["SECRET_KEY"] = os.urandom(24)  # Flaskアプリのコンフィグレーションに秘密鍵(SECRET_KEY)を定義
+app.config["SECRET_KEY"] = os.urandom(24)
 
 # DB生成
 db = SQLAlchemy(app)
@@ -47,7 +47,7 @@ def load_user(user_id):
 
 
 @app.route("/", methods=["GET", "POST"])
-@login_required
+# @login_required
 def index():
     if request.method == "GET":
         posts = Post.query.all()
@@ -66,7 +66,7 @@ def signup():
         )
         db.session.add(user)
         db.session.commit()
-        return redirect("login")
+        return redirect("/login")
     else:
         return render_template("signup.html")
 
@@ -86,14 +86,14 @@ def login():
 
 
 @app.route("/logout")
-@login_required
+# @login_required
 def logout():
     logout_user()
     return redirect("/login")
 
 
 @app.route("/create", methods=["GET", "POST"])
-@login_required
+# @login_required
 def create():
     if request.method == "POST":
         title = request.form.get("title")
@@ -109,7 +109,7 @@ def create():
 
 
 @app.route("/<int:id>/update", methods=["GET", "POST"])
-@login_required
+# @login_required
 def update(id):
     post = Post.query.get(id)
 
@@ -123,7 +123,7 @@ def update(id):
 
 
 @app.route("/<int:id>/delete", methods=["GET"])
-@login_required
+# @login_required
 def delete(id):
     post = Post.query.get(id)
     db.session.delete(post)
